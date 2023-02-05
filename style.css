@@ -1,0 +1,101 @@
+body{
+    background-color: rgb(158, 18, 18);
+    padding: 5vh 5vw;
+    margin: 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    order: 1;
+    flex-wrap: wrap;
+    margin: 10vh;
+    width: 65%;
+    height: 70%;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: rgb(75, 75, 75);
+}
+
+h1{
+    font-size: 50px;
+    font-family: Arial;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.calc{
+    height: 37%;
+    background: black;
+    padding: 10px;
+    margin: 0 5vw 5vh 5vw;
+    border-radius: 10px;
+    display: inline-block;
+
+}
+#answer{
+    background: greenyellow;
+    width: 370px;
+    height: 80px;
+    color: black;
+    border-radius: 10px;
+    padding-right: 10px;
+    margin-bottom: 18px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+input{
+    font-size: 30px;
+    width: 65px;
+    height: 55px;
+    color: white;
+    background: rgba(128, 128, 128, 0.315);
+    border-radius: 10px;
+    margin: 5px;
+    outline: none;
+    border: 0px solid;
+}
+input[type="button"]:hover{
+    cursor: pointer;
+    background: white;
+    color: black;
+}
+.btn-red{
+    background-color: red;
+}
+.btn-blue{
+    background-color: skyblue;
+}
+.desc{
+    size-adjust: stretch;
+    order: 2;
+    color: rgb(91, 4, 172);
+    flex-shrink: inherit;
+    flex-wrap: wrap;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: large;
+    background-color: black;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+@media screen and (max-width:200px) {
+    body{
+        width: fit-content;
+        height: fit-content;
+    }
+    .container{
+        width: 60%;
+        height: 70%;
+    }
+    .calc{
+        margin: 0vh 5vw 5vh 5vw;
+        width: 60%;
+        height: 70%;
+    }
+}
