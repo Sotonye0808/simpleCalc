@@ -84,7 +84,7 @@ input[type="button"]:hover{
     padding: 10px;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:200px) {
     body{
         width: fit-content;
         height: fit-content;
